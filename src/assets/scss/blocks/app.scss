@@ -1,0 +1,98 @@
+.app {
+    background: rgba($white, .1);
+    
+    padding: 20px;
+    width: 600px;
+    box-shadow: 0 25px 45px rgba($black, .1);
+    border-radius: .5rem;
+    border: 1px solid rgba($white, .5);
+    border-right: 1px solid rgba($white, .2);
+    border-bottom: 1px solid rgba($white, .2);
+}
+
+.squares{
+    &__header {
+        padding: 20px;
+        text-align: center;
+    }
+
+    &__content {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__footer {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__input {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+
+        label {
+            display: inline-block;
+            max-width: 100%;
+            margin-bottom: 3px;
+            color: #1f1f1f;
+            font-size: 1.2rem;
+            font-weight: 700;
+            line-height: 1.2rem;
+        }
+        
+        input {
+            display: block;
+            width: 100%;
+            max-height: 2.8rem;
+            padding: .8rem 1rem;
+            font-size: inherit;
+            font-family: inherit;
+            font-weight: inherit;
+            line-height: 1.4;
+            color: #000;
+            background: #fff none;
+            border: 1px solid #999;
+            border-radius: 5px;
+        }
+        
+    }
+
+    &__title{
+        color: #1f1f1f;
+        font-size: 1.6rem;
+        font-weight: 400;
+    
+        span {
+            font-weight: 700;
+        }
+    }
+    
+    &__field {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        min-height: 26rem;
+        min-width: 26rem;
+        max-width: 300px;
+        max-height: 300px;
+    
+        box-shadow: 0 25px 45px rgba($black, .1);
+        border-radius: .5rem;
+        border: 1px solid rgba($white, .5);
+        border-right: 1px solid rgba($white, .2);
+        border-bottom: 1px solid rgba($white, .2);
+        background: rgba(#fff, .3);
+    
+        position: relative;
+    }
+}
+
+.hide {
+    display: none!important;
+}

@@ -1,0 +1,34 @@
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "vendor/reset";
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    width: 100%;
+    height: 100%;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-weight: 300;
+    color: $black;
+
+    overflow-x: hidden;
+}
+
+@import "blocks/wrapper";
+@import "blocks/app";
+@import "blocks/btn";

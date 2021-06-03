@@ -1,0 +1,30 @@
+.btn {
+    position: absolute;
+    z-index: 1;
+    display: inline-block;
+    padding: 1rem 2.3rem;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 1.4rem;
+    line-height: 1.3rem;
+    cursor: pointer;
+    user-select: none;
+    background: #fad64e;
+    color: #3f3f3f;
+    border: none;
+    border-radius: 2.8rem;
+    transition: transform .2s ease-in-out, 
+                box-shadow .2s ease-in-out;
+    
+    &:active {
+        transition: transform .1s ease-in-out,box-shadow .1s ease-in-out!important;
+        transform: none!important;
+        box-shadow: none!important;
+    }
+    
+    &:hover {
+        box-shadow: 0 6px 16px 0 rgba(0,0,0,.2);
+        transform: translateY(-1px);
+    }
+}
